@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [AutomationTestScenario]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="86.0"/>
+    <parameter name="platform" value="Windows 10"/>
+    <classes>
+      <class name="TesstCase.AutomationTestCase">
+        <methods>
+          <include name="SetDown"/>
+          <include name="SetUp"/>
+          <include name="TestScenario"/>
+        </methods>
+      </class> <!-- TesstCase.AutomationTestCase -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [AutomationTestScenario] -->
